@@ -70,6 +70,40 @@ only two bits are required to represent this character.
 
 ## Run Length Coding (RLC)
 
+Run length coding is used in cases where there are long strings of
+repeating patterns. Instead of writing them out, the algorithm
+combines them and stores the data as compact as possible.
+
+For example, let's say we have a bitmap image (only two colors)
+that is `5x5` pixels in size:
+
+```plain
++-----+
+|.....|
+|.xxx.|
+|.xxx.|
+|.xxx.|
+|.....|
++-----+
+x: black, ' ': white
+
+Bits: 1111110001100011000111111 (25 bits)
+```
+
+Now, we can determin the biggest count of one value repeating. In
+this case that would be six. To store the number six, we need at
+least three bits which is the value we will use.
+
+We can now simply alter between the values (1/0) and write out the
+amount they occur in:
+
+```plain
+Result: 110 011 010 011 010 011 110 (21 bits)
+```
+
+As we can observe, the run length coding has reduced the size of our
+data and we can store it more efficiently.
+
 ## Lempel-Ziv-Welch (LZW)
 
 ## Burrows-Wheeler-Transformation

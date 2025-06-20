@@ -1,5 +1,5 @@
 site_name: Knowledgebase
 
 plugins:
-    - search
-    - mermaid2
+  - search
+  - mermaid2
