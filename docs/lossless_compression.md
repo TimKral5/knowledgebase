@@ -9,7 +9,10 @@ letters that occur very often in a text.
 
 ### Morse Code
 
-The morse code focuses
+The morse code has a fixed set of codes that resemble the probability
+of how often the letters appear in words of the language it has been
+designed for. The letters that occur more often need less symbols
+(`.`/`-`) to be written out.
 
 | Code    | Symbol | Code    | Symbol | Code    | Symbol |
 |---------|--------|---------|--------|---------|--------|
@@ -27,9 +30,7 @@ The morse code focuses
 | `.-..`  | `L`    | `-.--`  | `Y`    |
 | `--`    | `M`    | `--..`  | `Z`    |
 
-**The international morse code table**
-
-
+> The international morse code table
 
 ### Huffman Code
 
