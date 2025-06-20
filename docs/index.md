@@ -1,3 +1,12 @@
+---
+author: Tim Kral
+geometry:
+  - left=25mm
+  - right=25mm
+  - top=25mm
+  - bottom=25mm
+---
+
 # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
