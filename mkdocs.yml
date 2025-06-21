@@ -4,6 +4,8 @@ theme: readthedocs
 nav:
   - Overview:
     - index.md
+  - 'Project Management':
+    - iperka.md
   - 'Data Structures':
     - color_models.md
   - Algorithms:
