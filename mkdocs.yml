@@ -4,8 +4,14 @@ theme: readthedocs
 nav:
   - Overview:
     - index.md
+  - 'Data Structures':
+    - color_models.md
   - Algorithms:
     - lossless_compression.md
 plugins:
   - search
   - mermaid2
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+markdown_extensions:
+  - mdx_math

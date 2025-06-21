@@ -1,5 +1,6 @@
 input-files:
   - docs/index.md
+  - docs/color_models.md
   - docs/lossless_compression.md
 output-file: out/documentation.pdf
 
