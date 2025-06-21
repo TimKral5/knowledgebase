@@ -60,9 +60,9 @@ graph TD
     AN-->|1|N["N(1)"]
 ```
 
-> **Example:** HUFFMAN<br>
-> **Result:** 110001010001010011 (18 bit)<br>
-> **Original:** HUFFMAN (7 bytes)
+> <div>**Example:** HUFFMAN</div>
+> <div>**Result:** 110001010001010011 (18 bit)</div>
+> <div>**Original:** HUFFMAN (7 bytes)</div>
 
 In this example, only the letter `F` occurs more than once. Since
 that is a letter that occurs more often, the tree is made so that
@@ -106,4 +106,39 @@ data and we can store it more efficiently.
 
 ## Lempel-Ziv-Welch (LZW)
 
+This algorithm does not only take repeating letters into account, but
+entire words and sentences if they are identical. Also, in contrast
+to the VLC algorithms, LZW does not need a predefined or precomputed
+table.
+
+LZW makes use of a temporary dictionary to keep track of patterns it
+encounters in which all patterns have an index to which a reference
+can be made if the pattern occurs in another place.
+
+> **Example:** `TO BE OR NOT TO BE`
+
+| String | Found | Stored | Dict. Index | Dict. Value |
+|--------|-------|--------|-------------|-------------|
+| `(T)O BE OR NOT TO BE` | `T` | `T` | `<256>` | `TO` |
+| `T(O) BE OR NOT TO BE` | `O` | `O` | `<257>` | `O ` |
+| `TO( )BE OR NOT TO BE` | ` ` | ` ` | `<258>` | ` B` |
+| `TO (B)E OR NOT TO BE` | `B` | `B` | `<259>` | `BE` |
+| `TO B(E) OR NOT TO BE` | `E` | `E` | `<260>` | `E ` |
+| `TO BE( )OR NOT TO BE` | ` ` | ` ` | `<261>` | ` O` |
+| `TO BE (O)R NOT TO BE` | `O` | `O` | `<262>` | `OR` |
+| `TO BE O(R) NOT TO BE` | `R` | `R` | `<263>` | `R ` |
+| `TO BE OR( )NOT TO BE` | ` ` | ` ` | `<264>` | ` N` |
+| `TO BE OR (N)OT TO BE` | `N` | `N` | `<265>` | `NO` |
+| `TO BE OR N(O)T TO BE` | `O` | `O` | `<266>` | `OT` |
+| `TO BE OR NO(T) TO BE` | `T` | `T` | `<267>` | `T ` |
+| `TO BE OR NOT( )TO BE` | ` ` | ` ` | `<268>` | ` T` |
+| `TO BE OR NOT (TO) BE` | `TO` | `<256>` | `<269>` | `TO ` |
+| `TO BE OR NOT TO( B)E` | ` B` | `<258>` | `<270>` | ` BE` |
+| `TO BE OR NOT TO B(E)` | `E` | `E` | `---` | `---` |
+
+> **Result:** `TO BE OR NOT <256><258>E`
+
 ## Burrows-Wheeler-Transformation
+
+<!-- TODO: BWT -->
+
