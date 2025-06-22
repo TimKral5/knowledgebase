@@ -1,5 +1,6 @@
 input-files:
   - docs/index.md
+  - docs/bash.md
   - docs/iperka.md
   - docs/video_formats.md
   - docs/color_models.md

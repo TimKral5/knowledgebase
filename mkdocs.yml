@@ -4,6 +4,8 @@ theme: readthedocs
 nav:
   - Overview:
     - index.md
+  - 'Programming Languages':
+    - bash.md
   - 'Project Management':
     - iperka.md
   - 'Data Structures':
