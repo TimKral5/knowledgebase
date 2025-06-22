@@ -4,8 +4,24 @@ theme: readthedocs
 nav:
   - Overview:
     - index.md
+    - resources.md
+    - todo.md
   - 'Programming Languages':
     - bash.md
+    - javascript.md
+    - go.md
+  - 'Tools and Technologies':
+    - Protocols:
+      - http.md
+    - 'NodeJS Packages':
+      - js_express.md
+    - 'Go Libraries':
+      - go_http.md
+      - go_xml.md
+      - go_json.md
+    - Databases:
+      - mongo.md
+      - sql.md
   - 'Project Management':
     - iperka.md
   - 'Data Structures':
@@ -19,4 +35,5 @@ plugins:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 markdown_extensions:
-  - mdx_math
+  - pymdownx.arithmatex
+  - pymdownx.tasklist

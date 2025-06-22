@@ -1,9 +1,30 @@
 input-files:
+  # Overview
   - docs/index.md
+  - docs/resources.md
+  - docs/todo.md
+  # Programming Languages
   - docs/bash.md
+  - docs/javascript.md
+  - docs/go.md
+  # Tools and Technologies
+  # - Protocols
+  - docs/http.md
+  # - NodeJS Packages
+  - docs/js_express.md
+  # - Go Libraries
+  - docs/go_http.md
+  - docs/go_xml.md
+  - docs/go_json.md
+  # - Databases
+  - docs/mongo.md
+  - docs/sql.md
+  # Project Management
   - docs/iperka.md
+  # Data Structures
   - docs/video_formats.md
   - docs/color_models.md
+  # Algorithms
   - docs/lossless_compression.md
 output-file: out/documentation.pdf
 
