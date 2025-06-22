@@ -2,7 +2,6 @@
 
 ## Populate Placeholders
 
-- [ ] ExpressJS ([express_js.md](./express_js.md))
 - [ ] JavaScript ([javascript.md](./javascript.md))
 - [ ] Go ([go.md](./go.md))
 - [ ] Go HTTP ([go_http.md](./go_http.md))
@@ -16,4 +15,5 @@
 
 - [ ] Bash Programming ([bash.md](./bash.md))
 - [ ] Lossless Compression ([lossless_compression.md](./lossless_compression.md))
+- [ ] ExpressJS ([express_js.md](./express_js.md))
 
