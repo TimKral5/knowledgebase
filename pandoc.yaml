@@ -26,6 +26,7 @@ input-files:
   - docs/color_models.md
   # Algorithms
   - docs/lossless_compression.md
+  - cryptography.md
 output-file: out/documentation.pdf
 
 filters:

@@ -29,6 +29,7 @@ nav:
     - color_models.md
   - Algorithms:
     - lossless_compression.md
+    - cryptography.md
 plugins:
   - search
   - mermaid2

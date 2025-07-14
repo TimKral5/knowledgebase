@@ -147,6 +147,7 @@ app.use(session({
     secret: 'supersecret',
     resave: false,
     saveUninitialized: false,
+    secure: false,
     cookie: {}
 }));
 ```
